@@ -1,0 +1,19 @@
+{
+  "name": "gql-ts-template",
+  "version": "1.0.0",
+  "description": "A template project for Apollo GraphQL APIs using Typescript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --require ts-node/register --recursive --ui bdd './test/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roneygomes/gql-ts-template.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/roneygomes/gql-ts-template/issues"
+  },
+  "homepage": "https://github.com/roneygomes/gql-ts-template#readme"
+}

@@ -1,0 +1,14 @@
+# intellij
+.idea/
+
+# :-/
+node_modules/
+
+# typescript
+/dist
+
+# terraform
+**/.terraform
+
+# environemnt
+.env
