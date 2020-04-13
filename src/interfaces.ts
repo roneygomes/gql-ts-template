@@ -1,9 +1,9 @@
-import { UserDataSource } from "./users/dataSource";
+import UserDataSource from "./users/dataSource";
 
 export interface ApplicationContext {
-  dataSources: DataSources;
+  dataSources: ApplicationDataSources;
 }
 
-export interface DataSources {
-  userDataSource: UserDataSource;
+export interface ApplicationDataSources {
+  userDataSource: UserDataSource<ApplicationContext>;
 }

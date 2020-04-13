@@ -1,19 +1,21 @@
 import { ApolloServer } from "apollo-server";
-import { UserDataSource } from "./users/dataSource";
-import * as userResolvers from "./users/resolvers";
+import { DataSources } from "apollo-server-core/src/graphqlOptions";
+import UserDataSource from "./users/dataSource";
+import usersResolver from "./users/resolvers";
 
-import { typeDefs } from "./schema";
+import typeDefs from "./schema";
+import { ApplicationContext } from "./interfaces";
 
-const dataSources = () => {
+const dataSources = (): DataSources<ApplicationContext> => {
   return {
-    userDataSource: new UserDataSource(),
-  }
+    userDataSource: new UserDataSource<ApplicationContext>(),
+  };
 };
 
 const resolvers = {
   Query: {
-    users: userResolvers.users,
-  }
+    users: usersResolver,
+  },
 };
 
 const server = new ApolloServer({
