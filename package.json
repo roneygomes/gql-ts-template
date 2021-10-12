@@ -21,22 +21,22 @@
   "homepage": "https://github.com/roneygomes/gql-ts-template#readme",
   "devDependencies": {
     "@types/chai": "^4.2.11",
-    "@types/mocha": "^7.0.2",
+    "@types/mocha": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "chai": "^4.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-prettier": "^3.1.2",
-    "mocha": "^7.1.1",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^9.1.2",
     "prettier": "^2.0.4",
     "ts-node": "^8.8.2",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "apollo-datasource": "^0.7.0",
-    "apollo-server": "^2.12.0",
-    "apollo-server-core": "^2.14.2"
+    "apollo-datasource": "^3.2.0",
+    "apollo-server": "^3.4.0",
+    "apollo-server-core": "^3.4.0"
   }
 }
